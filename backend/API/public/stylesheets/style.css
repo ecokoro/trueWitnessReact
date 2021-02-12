@@ -3,6 +3,11 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+header {
+  background-color: gray;
+  color: purple;
+}
+
 a {
   color: #00B7FF;
 }
