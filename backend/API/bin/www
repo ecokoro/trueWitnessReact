@@ -7,7 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('api:server');
 var http = require('http');
-const projectConfig = require('../config.json')
+const PROJECTCONFIG = require('../config.json')
 
 /**
  * Get port from environment and store in Express.
@@ -15,7 +15,7 @@ const projectConfig = require('../config.json')
 
 // var port = normalizePort(process.env.PORT || '3000');
 // var port = projectConfig.port;
-app.set('port', projectConfig.port);
+app.set('port', PROJECTCONFIG.port);
 
 /**
  * Create HTTP server.
@@ -27,7 +27,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(projectConfig.port,projectConfig.host);
+server.listen(PROJECTCONFIG.port,PROJECTCONFIG.host);
 server.on('error', onError);
 server.on('listening', onListening);
 
