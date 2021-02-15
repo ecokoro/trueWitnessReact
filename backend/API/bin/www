@@ -28,7 +28,6 @@ var server = http.createServer(app);
  */
 
 server.listen(projectConfig.port,projectConfig.host);
-console.log(`Server running on ${projectConfig.host}:${projectConfig.port}`);
 server.on('error', onError);
 server.on('listening', onListening);
 
@@ -90,4 +89,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`Server running on ${server.address().address}:${server.address().port}`);
 }
