@@ -1,0 +1,12 @@
+{
+  "name": "TrueWitness",
+  "displayName": "TrueWitness",
+  "expo": {
+    "name": "TrueWitness",
+    "slug": "TrueWitness",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
